@@ -1,0 +1,75 @@
+/* creatig this css file , css varibles are used as a shortcut of entities that contain a specfic vaules that are resuded throughtout the document */
+:root {
+    /* the root element represents the html element. this will set the background color and so on for the website page  */
+    --dark: #374151   ;
+    --darker: #1f2937 ;
+    --darkest: #111827  ;
+    --light: #6b7280   ;
+    --pink:  #ec4899   ;
+    --purple:  #8b5cf6 ;
+
+}
+/* The box sizing margin and font familt is cleaning up the look of things */
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fantasy', 'Fira sans';
+   
+}
+/* display of flex is tp make sure everything looks good. the flex directions will move the boxes around. The min height is setting the minuim height of the element. this will prevent the used vaule of the height property from becoming smaller than the vaule  */
+body {
+    display: flex;
+    flex-direction:column;
+    /* vh stands for viewport height this will let the body element grow even more if necessary */
+    min-height: 100vh;
+    background: var(--pink);
+    color: #fff;
+}
+
+header {
+    /* Padding is used for the space between its content and border. rem is the root em which means the root elements font size */
+    padding: 2rem 1rem;
+    /* px is the css pixels  */
+    max-width: 800px;
+    width: 100%;
+    /* he top/bottom margin is 0, and the left/right margin is auto */
+    margin: 0 auto;
+
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#new-task-form{
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+new-task-input{
+flex: 1 1 0%;
+background-color: var(--darker);
+padding:   1rem;
+border-radius: 1rem;
+margin-right: 1rem;
+color: var(--light);
+font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+    color: var(--gray)
+}
+
+#new-task-input{
+    color: var(--purple)
+    
+}

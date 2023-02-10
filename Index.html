@@ -9,7 +9,7 @@
     <!-- //Here on title this is What i will be naming my project. -->
     <title>To Do List</title>
     <!-- //After the title add link rel="stylesheet" href="and whatever the css file is name". The command will link the sheet -->
-    <link  rel="stylesheet" href="main.css" />
+    <link  rel="stylesheet" href="main.css"/>
 </head>
 <body>
     <!-- //next add a header,then <h1>Name of the first header</h1> -->
@@ -17,17 +17,64 @@
         <h1>To Do List</h1>
         <!-- by using form id this help sumbit the new element -->
         <form id="new-to-do-list-form">
-            <!-- to generate the input type text tyoe in input:text and then hit tab. Below is what the shorcut will give you, including name but name is not needed therefore it is removed. the id is the input and the placeholder is what will be in the text box , dimmed out and once the user start typing it will dissappear  -->
+            <!-- to generate the input type text type in input:text and then hit tab. Below is what the shorcut will give you, including name but name is not needed therefore it is removed. the id is the input and the placeholder is what will be in the text box , dimmed out and once the user start typing it will dissappear  -->
+
+            <!--Input:submit is used to insert a submit button-->
+
+            <!--id is used to identify when linking with css-->
+
+            <!-- Placeholder is used to describe the input or text feild area, so on the website in the text box you will see the placeholder statement-->
             <input 
             type="text" 
             id="new-to-do-list-input"
-            placeholder="What would you like to add today ?"/>
+            placeholder="What would you like to add today ?" />
+
+            <!--adding the intput:submit this is how the form will be submitted  -->
+            <input 
+            type="submit" 
+            id="New-task-add-here"
+            value="Add Task" />
 
       
         </form>
 
 
     </header>
-    
+    <!--The main tag will be added here to show the main content of the document -->
+    <main>
+
+        <section class="to-do-list">
+            <h2>Task</h2>
+<!--create a dummy item  -->
+            <div id="tasks">
+                <!-- .content tab will bring up whats below -->
+                <div id="task">
+                    <div class="content">
+                    <!-- input:text tab then take out name and id since it is not needed. FOr class text this is what will be inside of the content. The read only is placed so the user can not edit the placeholder in the bar  -->
+                        <input
+                             type="text"
+                            class="text"
+                             vaule="my brilliant task"
+                             readonly 
+                   
+                        />
+                    </div>
+                    <!-- .actions tab. actions will be for the buttons -->
+                    <div class="actions">
+                        <!-- button.edit tab -->
+                        <button class="edit">Edit</button>
+                        <!-- the second button is the delete option -->
+                        <button class="delete">Delete</button>
+
+                     </div>
+                </div>      
+            </div>          
+           
+        </section>
+
+        </section>
+    </main>
+    <!-- the script tag is placed to link the javascript -->
+    <script src="main.js"></script>
 </body>
 </html>
