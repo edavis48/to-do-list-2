@@ -5,7 +5,7 @@
     --darker: #1f2937 ;
     --darkest: #111827  ;
     --light: #6b7280   ;
-    --pink:  #ec4899   ;
+    --pink:  #FDB2F7   ;
     --purple:  #8b5cf6 ;
 
 }
@@ -64,12 +64,15 @@ margin-right: 1rem;
 color: var(--light);
 font-size: 1.25rem;
 }
-
+/* A task form is a template that can be used to ensure that a task is created in the right format and with the right information */
 #new-task-input::placeholder {
     color: var(--gray)
 }
 
-#new-task-input{
-    color: var(--purple)
-    
+#new-task-submit {
+    color: var(--light);
+    font-size: 1.25rem;
+    font-weight:700;
+    background-image: linear-gradient(to right, var(--light)), Var(--purple);
+
 }
